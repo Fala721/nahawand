@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { ibmsans } from './ui/fonts'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,9 +12,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const isRTL = true;
+  const  dirc = (isRTL) ? 'rtl' : 'ltr';
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ar">
+      <body dir={dirc} className={`${ibmsans.className} bg-slate-50 `}>{children}</body>
     </html>
   )
 }
