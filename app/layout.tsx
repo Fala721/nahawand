@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { ibmsans } from './ui/fonts'
+import { ibmsans } from './components/ui/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {

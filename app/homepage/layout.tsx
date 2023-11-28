@@ -1,6 +1,6 @@
-import Header from "../ui/header";
-import Search from "../ui/search";
-import SideNav from "../ui/sidenav";
+import Header from "../components/ui/header";
+import Search from "../components/ui/search";
+import SideNav from "../components/ui/sidenav";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

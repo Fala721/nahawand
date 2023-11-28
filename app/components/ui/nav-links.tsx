@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-import { sidenavlinks } from '../lib/constants';
+import { sidenavlinks } from '../../lib/constants';
 
 
 const links = sidenavlinks;

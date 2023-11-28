@@ -1,4 +1,5 @@
 import { HomeIcon,StarIcon } from "@heroicons/react/24/outline"
+import { Recentfile } from "./types";
 
 
 export const profilecardlistdata = [
@@ -59,41 +60,41 @@ export const sidenavlinks = [
     { name: 'Customers', href: '/', icon: HomeIcon },
 ];
 
-export const recentFilesData = [
+export const recentFilesData : Recentfile[] = [
     {
       id: 1,
       date: '2023-11-01',
-      fileName: 'Document1.pdf',
+      filename: 'Document1.pdf',
       author: 'John Doe',
-      fileType: 'PDF',
+      filetype: 'PDF',
     },
     {
       id: 2,
       date: '2023-11-02',
-      fileName: 'Spreadsheet.xlsx',
+      filename: 'Spreadsheet.xlsx',
       author: 'Jane Smith',
-      fileType: 'Excel',
+      filetype: 'Excel',
     },
     {
       id: 3,
       date: '2023-11-03',
-      fileName: 'Presentation.pptx',
+      filename: 'Presentation.pptx',
       author: 'Alex Johnson',
-      fileType: 'PowerPoint',
+      filetype: 'PowerPoint',
     },
     {
       id: 4,
       date: '2023-11-04',
-      fileName: 'Image.jpg',
+      filename: 'Image.jpg',
       author: 'Eva Williams',
-      fileType: 'Image',
+      filetype: 'Image',
     },
     {
       id: 5,
       date: '2023-11-05',
-      fileName: 'CodeFile.js',
+      filename: 'CodeFile.js',
       author: 'Chris Miller',
-      fileType: 'JavaScript',
+      filetype: 'JavaScript',
     },
     // Add more data as needed
   ];

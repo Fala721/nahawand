@@ -2,7 +2,7 @@ import { Menu } from '@headlessui/react'
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { ProfileCard } from './profilecard'
 import { useState } from 'react';
-import { DropdownItem } from '../lib/types';
+import { DropdownItem } from '../../lib/types';
 
 
 interface MyDropdownProps {

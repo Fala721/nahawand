@@ -1,5 +1,5 @@
-import { maqamcardslist } from "../../lib/constants";
-import { MaqamInfo } from "../../lib/types";
+import { maqamcardslist } from "../../../lib/constants";
+import { MaqamInfo } from "../../../lib/types";
 
 
 export default function CardsRow({
