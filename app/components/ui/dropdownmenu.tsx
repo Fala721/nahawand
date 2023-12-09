@@ -1,6 +1,6 @@
 import { Menu } from '@headlessui/react'
 import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
-import { ProfileCard } from './profilecard'
+import { ProfileCard } from './profilecard-droplist'
 import { useState } from 'react';
 import { DropdownItem } from '../../lib/types';
 

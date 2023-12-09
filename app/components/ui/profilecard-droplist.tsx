@@ -1,4 +1,11 @@
+
+import { getUserProfile } from "@/app/lib/actions";
+import { UserProfile } from "@/app/lib/types";
+
 export function ProfileCard(){
+
+  
+
   return(
       <div className="flex flex-row items-center gap-4 m-1">
         <div className=" items-center justify-center w-12 h-12 bg-slate-400 rounded-full overflow-hidden mr-2 ">

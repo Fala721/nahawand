@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { ibmsans } from './components/ui/fonts'
 import './globals.css'
+import { Toaster } from './components/ui/toaster'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,10 @@ export default function RootLayout({
   const  dirc = (isRTL) ? 'rtl' : 'ltr';
   return (
     <html lang="ar">
-      <body dir={dirc} className={`${ibmsans.className} bg-slate-50 `}>{children}</body>
+      <body dir={dirc} className={`${ibmsans.className} bg-slate-50 `}>
+        {children}
+        <Toaster/>
+        </body>
     </html>
   )
 }

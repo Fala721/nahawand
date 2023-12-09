@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Search from './search';
-import { ProfileCard } from './profilecard';
+import { ProfileCard } from './profilecard-droplist';
 import {MyDropdown} from './dropdownmenu';
 import { profilecardlistdata } from '../../lib/constants';
 import {
@@ -13,9 +13,17 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from './dropdown-menu';
+import SignUserOut from './signout';
+import { Button } from './button';
+import Link from 'next/link';
+import { getUserProfile } from '@/app/lib/actions';
+
 
 export default function Header() {
-  const itemslist = profilecardlistdata
+
+ 
+
+
   return (
       <div className='flex shadow-xl bg-amber-300 sticky top-0 rounded-b border-b border-slate-400 justify-between items-center h-20'>
         {/* Logo */}
@@ -47,10 +55,10 @@ export default function Header() {
               <DropdownMenuContent>
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>Profile</DropdownMenuItem>
+                <DropdownMenuItem><Link href='/seed'>SEEd th DB</Link></DropdownMenuItem>
                 <DropdownMenuItem>Billing</DropdownMenuItem>
                 <DropdownMenuItem>Team</DropdownMenuItem>
-                <DropdownMenuItem>Subscription</DropdownMenuItem>
+                <DropdownMenuItem><SignUserOut/></DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
         </div>
