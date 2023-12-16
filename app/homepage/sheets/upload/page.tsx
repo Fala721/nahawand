@@ -1,4 +1,4 @@
-import UploadSheetForm from "@/app/components/sheet/upload";
+import UploadSheetForm from "@/components/sheet/upload-sheet";
 
 
 

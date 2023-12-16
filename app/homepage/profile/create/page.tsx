@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import CreateProfileForm from '@/app/components/signup/create-profile-form';
+import CreateProfileForm from '@/components/signup/create-profile-form';
 export default async function SignUpPage() {
 
   return (
